@@ -1,2 +1,1 @@
-# pufflewizzy.github.io
-Masterlist of Flow Moves
+# Master List of Flow Moves
