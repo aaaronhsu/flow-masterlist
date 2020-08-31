@@ -1,0 +1,83 @@
+@font-face {
+	font-family: Inter;
+	src: url(./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf)
+}
+
+@font-face {
+	font-family: IBM;
+	src: url(./fonts/IBM\ Plex\ Sans/IBMPlexSans-Regular.ttf)
+}
+
+.inter {
+	font-family: Inter;
+}
+
+.ibm {
+	font-family: IBM;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+* {
+	background-color: #1B2A41;
+}
+
+.background-color {
+	background-color: #1B2A41;
+}
+
+.header-text {
+	color: #E8E6F4;
+	font-family: Inter;
+}
+
+.header-text:hover {
+	color: white;
+}
+
+.title {
+	color: #E8E6F4;
+	font-family: Inter;
+}
+
+.caption-text {
+	color: #CCC9DC;
+	font-family: IBM;
+	padding-right: 35%;
+	font-size: 18px;
+}
+
+.sub-text {
+	color: #CCC9DC;
+	font-family: IBM;
+}
+
+.prop-heading {
+	color: #CCC9DC;
+	font-family: IBM;
+	font-weight: 400;
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+.prop-heading:hover {
+	background-color: #243857;
+	color: white;
+}
+
+.navbar-brand {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: 0.3s;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.fixed-bottom {
+	margin-bottom: 3%;
+}
