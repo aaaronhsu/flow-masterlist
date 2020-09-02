@@ -8,6 +8,9 @@
 	src: url(./fonts/IBM\ Plex\ Sans/IBMPlexSans-Regular.ttf)
 }
 
+.sticky-offset {
+	top: 1%;
+}
 .inter {
 	font-family: Inter;
 }

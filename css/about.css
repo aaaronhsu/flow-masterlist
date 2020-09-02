@@ -1,0 +1,20 @@
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+
+.heading-text {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+.description {
+	color: #E8E6F4;
+	max-width: 65%;
+	margin: 0 auto;
+}

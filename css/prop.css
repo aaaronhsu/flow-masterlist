@@ -1,0 +1,49 @@
+.heading-text {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+.description {
+	color: #E8E6F4;
+	font-size: 24px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.masterlist-image {
+	margin: 0 auto;
+	border-radius: 20px;
+	width: 30%;
+	height: 30%;
+
+	transition:0.5s;
+}
+
+.masterlist-image:hover {
+	width: 31%;
+	height: 31%;
+}
+
+.list-header {
+	font-size: 26px;
+	color: white;
+}
+
+.list-info {
+	font-size: 20px;
+	color: #E8E6F4;
+}
+
+.channel {
+	color: #CCC9DC;
+	font-family: IBM;
+	font-weight: 400;
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+.channel:hover {
+	background-color: #243857;
+	color: white;
+}
