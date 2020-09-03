@@ -1,0 +1,85 @@
+.heading-text {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+.description {
+	color: #E8E6F4;
+	font-size: 20px;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.easy {
+	color: #618B4A;
+}
+
+.medium {
+	color: #ad9900;
+}
+
+.hard {
+	color: #F57200;
+}
+
+.expert {
+	color: #D64933;
+}
+
+.staffing {
+	color: #d43a22;
+}
+
+.stringing {
+	color: #5cbe3e;
+}
+
+.whipping {
+	color: #a048f1;
+}
+
+.list-info {
+	margin-bottom: 3px;
+}
+
+.tips {
+	max-width: 90%;
+}
+
+.other-moves {
+	color: #CCC9DC;
+	font-family: IBM;
+	font-weight: 400;
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+.other-moves:hover {
+	background-color: #243857;
+	color: white;
+}
+
+.container-fluid {
+	margin: 0 auto;
+}
+
+.list-head {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.list-text {
+	font-size: 20px;
+	line-height: 0.8;
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+ul {
+	padding-left: 0;
+}
