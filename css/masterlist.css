@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  border: 0 none;
+    
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+    transition: all ease .4s;
+}
+
+.heading-text {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+.description {
+	color: #E8E6F4;
+	font-size: 24px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 100%;
+  min-height: auto;
+}
+
+.nav ul {
+  position: relative;
+  padding-top: 20px; 
+}
+
+.nav li {
+  position: relative;
+  padding: 20px 3px 0 3px; 
+  float: left; 
+  
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav li::before, .nav li::after{
+  content: '';
+  position: absolute; 
+  top: 0; 
+  right: 50%;
+  width: 50%; 
+  height: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.nav li::after{
+  left: 50%;
+  right: auto; 
+  
+  border-left: 1px solid #ccc;
+}
+
+.nav li:only-child::after, .nav li:only-child::before {
+  content: '';
+  display: none;
+}
+
+.nav li:only-child{ padding-top: 0;}
+.nav li:first-child::before, .nav li:last-child::after{
+  border: 0 none;
+}
+
+.nav li:last-child::before{
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+
+.nav li:first-child::after{
+    border-radius: 5px 0 0 0;
+}
+.nav ul ul::before{
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0; 
+  height: 20px;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 5px 10px;
+  
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  
+  text-decoration: none;
+  color: #ccc;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nav li a:hover {
+  color: #000;
+  background: #c8e4f8;   
+  border: 1px solid #94a0b4;
+}
+
+.easy {
+	background-color: #618B4A;
+}
+
+.medium {
+	background-color: #ad9900;
+}
+
+.hard {
+	background-color: #F57200;
+}
+
+.expert {
+	background-color: #D64933;
+}

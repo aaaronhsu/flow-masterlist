@@ -7,25 +7,25 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/prop.css">
-		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../../css/move.css">
+		<link rel="stylesheet" href="../../css/global.css">
     	<title>Flow Masterlist of Moves</title>
   	</head>
   	<body class="background-color">
 		<br>
 
 		<!-- Navbar -->
-		<div class="container-fluid sticky-top">
+		<div class="container-fluid sticky-top sticky-offset">
 			<nav class="navbar background-color">
 
 				<div class="d-flex flex-row">
-					<a class="navbar-brand header-text rounded p-2" href="../index.html">Home</a>
-					<a class="navbar-brand header-text rounded p-2 ml-4" href="../about.html">About</a>
+					<a class="navbar-brand header-text rounded p-2" href="../../index.html">Home</a>
+					<a class="navbar-brand header-text rounded p-2 ml-4" href="../../about.html">About</a>
 				</div>
 				
 				<form class="form-inline">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline my-2 my-sm-0 header-text" type="submit">Search</button>
+					<button class="btn btn-outline my-2 my-sm-0 header-text mobile" type="submit">Search</button>
 				</form>
 			</nav>
 		</div>
@@ -33,50 +33,27 @@
 
 		<!-- Header -->
 		<div class="container-fluid">
-			<h1 class="heading-text text-center mt-5">Whipping</h1>
-			<h3 class="description text-center mt-3">Whipping involves things</h3>
+			<h1 class="heading-text text-center mt-5">Move Name</h1>
+			<h3 class="description text-center mt-3">Difficulty: <span class="easy">Easy</span></h3>
 		</div>
 		
 
-		<img src="../images/placeholder.jpg" class="img-fluid mx-auto d-block my-5 masterlist-image" onclick="window.location='masterlist.html';">
-
+		<!-- Move Description -->
+		<img src="../../images/placeholder.jpg" class="img-fluid mx-auto d-block mt-5 mb-3">
+		<h3 class="description text-center">
+			This is a short description of the move. It has a couple components.
+			This is random text to simulate an actual description but I don't have one written because this is
+			a template move.
+		</h3>
 
 		<!-- Tips -->
-		<div class="container-fluid my-5">
+		<div class="container-fluid my-5 tips">
 			<li class="list-header ml-5 caption-text list-unstyled"> Tips:
 				<ul class="list-info">• Phasellus iaculis neque</ul>
 				<ul class="list-info">• Purus sodales ultricies</ul>
 				<ul class="list-info">• Vestibulum laoreet porttitor sem</ul>
 				<ul class="list-info">• Ac tristique libero volutpat at</ul>
 			</li>
-		</div>
-
-
-		<!-- Recommended Channels -->
-		<div class="container-fluid mt-5">
-			<h3 class="list-header ml-5">Recommended Channels</h3>
-
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm align-middle text-center" onclick="window.location='https://www.youtube.com/channel/UCTFFacZtI1pZhTeCIwAIMBg';">
-						<center class="channel rounded py-3">
-							<a>LightWhipping Notebook</a>
-						</center>
-					</div>
-	
-					<div class="col-sm align-middle" onclick="window.location='https://www.youtube.com/c/DancingWithLightning/featured';">
-						<center class="channel rounded py-3">
-							<a>Dancing with Lightning</a>
-						</center>
-					</div>
-	
-					<div class="col-sm align-middle" onclick="window.location='https://www.youtube.com/channel/UC9gSxUkfrvDSb2KPs1dQkMg';" target="_blank">
-						<center class="channel rounded py-3">
-							<a>Flowmi</a>
-						</center>
-					</div>
-				</div>
-			</div>
 		</div>
 
 

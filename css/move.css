@@ -1,0 +1,36 @@
+.heading-text {
+	color: white;
+	font-weight: 350;
+	font-family: Inter;
+}
+
+.description {
+	color: #E8E6F4;
+	font-size: 20px;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.easy {
+	color: #618B4A;
+}
+
+.medium {
+	color: #ad9900;
+}
+
+.hard {
+	color: #F57200;
+}
+
+.expert {
+	color: #D64933;
+}
+
+.list-info {
+	margin-bottom: 3px;
+}
+
+.tips {
+	max-width: 90%;
+}
