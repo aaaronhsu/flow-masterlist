@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script>
+			function filterSearch() {
+			  // Declare variables
+			  var input, filter, ul, li, a, i, txtValue;
+			  input = document.getElementById('search-bar');
+			  filter = input.value.toUpperCase();
+			  ul = document.getElementById("moves list-group");
+			  li = ul.getElementsByTagName('li');
+			
+			  // Loop through all list items, and hide those who don't match the search query
+			  for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("h3")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				  li[i].style.display = "";
+				} else {
+				  li[i].style.display = "none";
+				}
+			  }
+			}
+		</script>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/search.css">
+		<link rel="stylesheet" href="../css/global.css">
+    	<title>Flow Masterlist of Moves</title>
+  	</head>
+  	<body class="background-color">
+		<br>
+
+		<!-- Navbar -->
+		<div class="container-fluid sticky-top">
+			<nav class="navbar background-color">
+
+				<div class="d-flex flex-row">
+					<a class="navbar-brand header-text rounded p-2" href="index.html">Home</a>
+					<a class="navbar-brand header-text rounded p-2 ml-4" href="about.html">About</a>
+				</div>
+				
+				<a class="navbar-brand header-text rounded p-2 ml-4" href="search.html">Search</a>
+			</nav>
+		</div>
+			
+		<!-- Header -->
+		<div class="container-fluid">
+			<h1 class="heading-text text-center mt-5">Search</h1>
+			<h3 class="description text-center"><span class="staffing">Staffing</span> | <span class="stringing">Stringing</span> | <span class="whipping">Whipping</span></h3>
+		</div>
+
+		<!-- Search -->
+		<div class="container-fluid mt-4">
+			<center>
+				<div class="centerA">
+					<form class="form-inline mb-3">
+						<input class="form-control mr-sm-2" type="text" id="search-bar" onkeyup="filterSearch()" placeholder="Enter Move">
+					</form>
+				</div>
+				
+				<ul id="moves list-group">
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 1</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item staffing" href="#">Move 2</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item whipping" href="#">Move 3</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 4</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 5</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 6</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 7</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 8</h3></li>
+					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 9</h3></li>
+				</ul>
+			</center>
+			
+		</div>
+    
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  	</body>
+</html>
