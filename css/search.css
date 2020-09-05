@@ -38,23 +38,29 @@
 }
 
 .list-group-item {
-	background-color: #000000;
+	background-color: #1B2A41;
 	max-width: 40%;
 	transition: 0.5s;
+	border: 1px solid #3b485c !important;
+	margin-bottom: 5px;
+	border-radius: 15px !important;
 }
 
+
 .list-group-item > h3 {
-	background-color: #000000;
+	background-color: #1B2A41;
 	max-width: 40%;
 	transition: 0.5s;
 }
 
 .list-group-item:hover {
-	background-color: rgb(26, 27, 29);
+	background-color: #3a3a3a;
+	border: 1px solid #dfdbf7 !important;
+
 }
 
 .list-group-item:hover > h3 {
-	background-color: rgb(26, 27, 29);
+	background-color: #3a3a3a;
 }
 
 .item {
