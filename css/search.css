@@ -56,7 +56,6 @@
 .list-group-item:hover {
 	background-color: #3a3a3a;
 	border: 1px solid #dfdbf7 !important;
-
 }
 
 .list-group-item:hover > h3 {
@@ -80,7 +79,7 @@
 
 h3 {
 	color: white;
-	font-weight: 350;
+	font-weight: 450;
 	font-family: Inter;
 	font-size: 20px;
 	background-color: #1B2A41;
@@ -95,15 +94,15 @@ li {
 }
 
 .staffing {
-	color: #d43a22;
+	color: #B5C7D3;
 }
 
 .stringing {
-	color: #5cbe3e;
+	color: #A58D7F;
 }
 
 .whipping {
-	color: #a048f1;
+	color: #e7b87b;
 }
 
 .centerA {
