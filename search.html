@@ -1,27 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<script>
-			function filterSearch() {
-			  // Declare variables
-			  var input, filter, ul, li, a, i, txtValue;
-			  input = document.getElementById('search-bar');
-			  filter = input.value.toUpperCase();
-			  ul = document.getElementById("moves list-group");
-			  li = ul.getElementsByTagName('li');
-			
-			  // Loop through all list items, and hide those who don't match the search query
-			  for (i = 0; i < li.length; i++) {
-				a = li[i].getElementsByTagName("h3")[0];
-				txtValue = a.textContent || a.innerText;
-				if (txtValue.toUpperCase().indexOf(filter) > -1) {
-				  li[i].style.display = "";
-				} else {
-				  li[i].style.display = "none";
-				}
-			  }
-			}
-		</script>
 
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -31,7 +10,11 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link rel="stylesheet" href="../css/search.css">
 		<link rel="stylesheet" href="../css/global.css">
-    	<title>Flow Masterlist of Moves</title>
+		<title>Flow Masterlist of Moves</title>
+		
+		<!-- JS -->
+		<script src="search.js"></script>
+		
   	</head>
   	<body class="background-color">
 		<br>
@@ -65,15 +48,9 @@
 				</div>
 				
 				<ul id="moves list-group">
-					<li class="list-group-item" onclick="window.location='stringing/moves/template.html';"><h3 class="item stringing" href="#">Example Move</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item staffing" href="#">Move 2</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item whipping" href="#">Move 3</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 4</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item staffing" href="#">Move 5</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item whipping" href="#">Move 6</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item stringing" href="#">Move 7</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item staffing" href="#">Move 8</h3></li>
-					<li class="list-group-item" onclick="window.location='#';"><h3 class="item whipping" href="#">Move 9</h3></li>
+					<div id="csv_data">
+						
+					</div>
 				</ul>
 			</center>
 			
