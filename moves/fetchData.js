@@ -5,26 +5,35 @@ const move = urlParams.get('move')
 const prop = urlParams.get('prop')
 
 // Change to your URL (Must have Access-Control-Allow-Origin header to allow CORS)
-var csvUrl;
+var tsvUrl;
 
-if (prop == "stringing") csvUrl = "stringing.tsv";
-if (prop == "staffing") csvUrl = "staffing.tsv";
-if (prop == "whipping") csvUrl = "whipping.tsv";
+if (prop == "stringing") tsvUrl = "stringing.tsv";
+if (prop == "staffing") tsvUrl = "staffing.tsv";
+if (prop == "whipping") tsvUrl = "whipping.tsv";
 
 function capitalize(string) {
     return string[0].toUpperCase() + string.slice(1);
+}
+
+function capitalizePhrase(string) {
+	var words = string.split(' ');
+	var str = '';
+	for (var i = 0; i < words.length; i++) {
+		str += capitalize(words[i]) + " ";
+	}
+	return str.slice(0, -1);
 }
 
 function lowercase(string) {
 	return string[0].toLowerCase() + string.slice(1);
 }
 
-function handleCSVResult(csvString) {
+function handleTSVResult(tsvString) {
   // Get the div element to append the data to
-  var dataArea = document.querySelector('#csv_data');
+  var dataArea = document.querySelector('#tsv_data');
   
   // Split csv to rows
-  var rows = csvString.split('\n');
+  var rows = tsvString.split('\n');
   
   var htmlStr = '';
   var found = false;
@@ -63,7 +72,7 @@ function handleCSVResult(csvString) {
 		
 		// Move Header
 		htmlStr += '<div class="container-fluid"><h1 class="heading-text text-center mt-3">';
-		htmlStr += name;
+		htmlStr += capitalizePhrase(name);
 		htmlStr += '</h1><h3 class="description text-center mt-3">Type: <span class="';
 		htmlStr += prop;
 		htmlStr += '">';
@@ -159,16 +168,16 @@ function handleCSVResult(csvString) {
 var ajax = new XMLHttpRequest();
 
 // Set a GET request to the URL which points to your CSV file
-ajax.open('GET', csvUrl);
+ajax.open('GET', tsvUrl);
 
 // Set the action that will take place once the browser receives your CSV
 ajax.onreadystatechange = function() {
   if (ajax.readyState === XMLHttpRequest.DONE && ajax.status === 200) {
     // Request was successful
-    var csvData = ajax.responseText;
+    var tsvData = ajax.responseText;
 
     // Do something with that data here
-    handleCSVResult(csvData);
+    handleTSVResult(tsvData);
   }
 }
 

@@ -2,14 +2,14 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 // Change to your URL (Must have Access-Control-Allow-Origin header to allow CORS)
-var csvUrl;
+var tsvUrl;
 
-function handleCSVResult(csvString) {
+function handleTSVResult(tsvString) {
   // Get the div element to append the data to
-  var dataArea = document.querySelector('#csv_data');
+  var dataArea = document.querySelector('#move_list');
   
   // Split csv to rows
-  var rows = csvString.split('\n');
+  var rows = tsvString.split('\n');
   
   var htmlStr = '';
 
@@ -47,9 +47,9 @@ function handleCSVResult(csvString) {
 // Init Ajax Object
 var ajax = new XMLHttpRequest();
 
-csvUrl = "moves/moves.tsv";
+tsvUrl = "moves/moves.tsv";
 // Set a GET request to the URL which points to your CSV file
-ajax.open('GET', csvUrl);
+ajax.open('GET', tsvUrl);
 
 // Set the action that will take place once the browser receives your CSV
 ajax.onreadystatechange = function() {
@@ -58,7 +58,7 @@ ajax.onreadystatechange = function() {
     var csvData = ajax.responseText;
 
     // Do something with that data here
-    handleCSVResult(csvData);
+    handleTSVResult(csvData);
   }
 }
 
