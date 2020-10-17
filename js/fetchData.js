@@ -85,7 +85,7 @@ function handleTSVResult(tsvString) {
 
 		// Description
 		htmlStr +='<div class="container-fluid text-center">';
-		htmlStr += '<img src="../../images/placeholder.jpg" class="img-fluid mx-auto d-block mb-3">';
+		htmlStr += '<img src="../images/placeholder.jpg" class="img-fluid mx-auto d-block mb-3">';
 		htmlStr += '<h3 class="description text-center">';
 		htmlStr += description;
 		htmlStr += '</h3></div></div><div class="col-sm-4"><div class="row">';
