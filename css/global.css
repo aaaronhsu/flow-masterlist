@@ -78,7 +78,13 @@
 }
 
 .jumbotron {
-	margin-top: 5%;
+	margin-top: 15%;
+}
+
+@media (min-width: 700px) {
+	.jumbotron {
+		margin-top: 10%;
+	}
 }
 
 @media (min-width: 900px) {
