@@ -46,11 +46,21 @@
 	font-family: Inter;
 }
 
-.caption-text {
-	color: #CCC9DC;
-	font-family: IBM;
-	padding-right: 35%;
-	font-size: 18px;
+.fixed-bottom {
+	margin-bottom: 1%;
+}
+
+.prop-heading:hover {
+	background-color: #243857;
+	color: white;
+}
+.navbar-brand {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: 0.3s;
+}
+.navbar-brand:hover {
+	color: white;
 }
 
 .sub-text {
@@ -66,21 +76,20 @@
 	transition: 0.3s;
 }
 
-.prop-heading:hover {
-	background-color: #243857;
-	color: white;
+.jumbotron {
+	margin-top: 5%;
 }
 
-.navbar-brand {
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: 0.3s;
+@media (min-width: 900px) {
+	
+	.jumbotron {
+		margin-top: 6%;
+	}
+
 }
 
-.navbar-brand:hover {
-	color: white;
-}
-
-.fixed-bottom {
-	margin-bottom: 1%;
+@media (min-width: 1200px) {
+	.jumbotron {
+		margin-top: 10%;
+	}
 }
