@@ -11,6 +11,11 @@
 	margin: 0 auto;
 }
 
+.white-60 {
+	border-color: white;
+	width: 80%;
+}
+
 .easy {
 	color: #618B4A;
 }

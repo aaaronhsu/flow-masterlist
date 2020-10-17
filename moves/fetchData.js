@@ -109,6 +109,7 @@ function handleTSVResult(tsvString) {
 		}
 		htmlStr += '</li></center></div></div><div class="row">';
 
+
 		// Videos
 		htmlStr += '<div class="col-sm"><center><h3 class="list-head">Videos</h3><li class="list-unstyled list-text">';
 		if (video1T != '') {
@@ -122,7 +123,7 @@ function handleTSVResult(tsvString) {
 				}
 			}
 		}
-		htmlStr += '</li></center></div></div></div></div><br><br>';
+		htmlStr += '</li></center></div></div></div></div><hr class="white-60"></hr><br>';
 
 		// Related Moves
 		if (move1 != '') {
