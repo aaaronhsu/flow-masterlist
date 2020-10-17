@@ -71,9 +71,10 @@ function handleTSVResult(tsvString) {
 		var move3 = cells[15];
 		
 		// Move Header
-		htmlStr += '<div class="container-fluid"><h1 class="heading-text text-center mt-3">';
+		htmlStr += '<h1 class="sticky-top heading-text text-center mt-3">'
 		htmlStr += capitalizePhrase(name);
-		htmlStr += '</h1><h3 class="description text-center mt-3">Type: <span class="';
+		htmlStr += '</h1><div class="container-fluid">';
+		htmlStr += '<h3 class="description text-center">Type: <span class="';
 		htmlStr += prop;
 		htmlStr += '">';
 		htmlStr += capitalize(prop);
@@ -127,7 +128,7 @@ function handleTSVResult(tsvString) {
 
 		// Related Moves
 		if (move1 != '') {
-			htmlStr += '<div class="container-fluid mb-3"><h3 class="heading-text text-center">Related Moves</h3><div class="container-fluid"><div class="row">';
+			htmlStr += '<div class="container-fluid"><h3 class="heading-text text-center">Related Moves</h3><div class="container-fluid"><div class="row">';
 			htmlStr += '<div class="col-sm" onclick="window.location=\'';
 			htmlStr += '?move=' + move1 + '&prop=' + prop + '\';">';
 			htmlStr += '<center class="other-moves rounded py-3"><a>';
