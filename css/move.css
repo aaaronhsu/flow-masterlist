@@ -110,10 +110,34 @@ h3 {
 	margin-bottom: 0;
 }
 
+.video {
+	width: 100%;
+	height: 49.1vw;
+}
+
+@media (min-width: 575px) {
+	.video {
+		width: 100%;
+		height: 29vw;
+	}
+}
+
 @media (min-width: 900px) {
 	.description {
 		max-width: 80%;
 		font-size: 19px;
+	}
+
+	.video {
+		width: 100%;
+		height: 30vw;
+	}
+}
+
+@media (min-width: 1000px) {
+	.video {
+		width: 80%;
+		height: 24.8vw;
 	}
 }
 
@@ -121,5 +145,10 @@ h3 {
 	.description {
 		max-width: 70%;
 		font-size: 20px;
+	}
+
+	.video {
+		width: 80%;
+		height: 25.2vw;
 	}
 }

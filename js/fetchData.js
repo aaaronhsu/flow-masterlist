@@ -69,7 +69,8 @@ function handleTSVResult(tsvString) {
 		var move1 = cells[13];
 		var move2 = cells[14];
 		var move3 = cells[15];
-		
+
+		var demonstration = cells[16];
 		// Move Header
 		htmlStr += '<h1 class="sticky-top heading-text text-center mt-3">'
 		htmlStr += capitalizePhrase(name);
@@ -86,7 +87,12 @@ function handleTSVResult(tsvString) {
 
 		// Description
 		htmlStr +='<div class="container-fluid text-center">';
-		htmlStr += '<img src="../images/placeholder.jpg" class="img-fluid mx-auto d-block mb-3">';
+		htmlStr += '<iframe class="img-fluid mx-auto d-block mb-3 video" src="';
+
+		if (demonstration.charAt(0) != "h") htmlStr += 'https://www.youtube.com/embed/ZWcRmoLqhkc';
+		else htmlStr += demonstration;
+
+		htmlStr += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 		htmlStr += '<h3 class="description text-center">';
 		htmlStr += description;
 		htmlStr += '</h3></div></div><div class="col-sm-4"><div class="row">';
