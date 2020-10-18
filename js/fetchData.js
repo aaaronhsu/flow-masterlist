@@ -108,6 +108,9 @@ function handleTSVResult(tsvString) {
 				}
 			}
 		}
+		else {
+			htmlStr += '<ul> There are no tips here yet :(';
+		}
 		htmlStr += '</li></center></div></div><div class="row">';
 
 
@@ -123,6 +126,9 @@ function handleTSVResult(tsvString) {
 					htmlStr += '<ul>• <a href="' + video3 + '" target="_blank">' + video3T + '</a></ul>';
 				}
 			}
+		}
+		else {
+			htmlStr += '<ul> There are no videos here yet :(';
 		}
 		htmlStr += '</li></center></div></div></div></div><hr class="white-60"></hr><br>';
 
