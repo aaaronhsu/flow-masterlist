@@ -80,7 +80,13 @@ function handleTSVResult(tsvString) {
 		htmlStr += '">';
 		htmlStr += capitalize(prop);
 		htmlStr += '</span> | Difficulty: <span class="';
-		htmlStr += lowercase(difficulty);
+		
+		if (difficulty == "1" || difficulty == "2") htmlStr += "easy";
+		else if (difficulty == "3" || difficulty == "4") htmlStr += "medium";
+		else if (difficulty == "5" || difficulty == "6") htmlStr += "hard";
+		else if (difficulty == "7" || difficulty == "8") htmlStr += "expert";
+		else htmlStrl += "god"
+		
 		htmlStr += '">';
 		htmlStr += capitalize(difficulty);
 		htmlStr += '</span></h3></div><div class="row my-5"><div class="col-sm-7">';
