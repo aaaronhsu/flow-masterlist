@@ -44,6 +44,8 @@
 .title {
 	color: #E8E6F4;
 	font-family: Inter;
+	max-width: 85%;
+	font-size: 69px;
 }
 
 .fixed-bottom {
@@ -84,6 +86,13 @@
 @media (min-width: 700px) {
 	.jumbotron {
 		margin-top: 10%;
+	}
+
+	.title {
+		color: #E8E6F4;
+		font-family: Inter;
+		max-width: 85%;
+		font-size: 80px;
 	}
 }
 
