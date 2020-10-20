@@ -71,6 +71,7 @@ function handleTSVResult(tsvString) {
 		var move3 = cells[15];
 
 		var demonstration = cells[16];
+		
 		// Move Header
 		htmlStr += '<h1 class="sticky-top heading-text text-center mt-3">'
 		htmlStr += capitalizePhrase(name);
