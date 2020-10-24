@@ -25,7 +25,7 @@ function handleTSVResult(tsvString) {
 	
 	var level = cells[0];
 	
-	htmlStr += '<h3 class="list-header ml-5">General Tips for ' + level + '</h3>';
+	htmlStr += '<h3 class="list-header ml-5">General Tips for ' + level + ' stringers</h3>';
 
 	for (var a = 1; a < cells.length; a++) {
 		if (cells[a] == '') break;
