@@ -83,6 +83,27 @@
 	margin-top: 15%;
 }
 
+.staffing {
+	color: #8fe5e5;
+	transition: 0.3s;
+}
+
+.stringing {
+	color: #92b7eb;
+	transition: 0.3s;
+}
+
+.whipping {
+	color: #ada4ec;
+	transition: 0.3s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #d7d6e2;
+	transition: 0.3s;
+}
+
 @media (min-width: 700px) {
 	.jumbotron {
 		margin-top: 10%;

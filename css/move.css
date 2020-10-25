@@ -18,35 +18,23 @@
 }
 
 .easy {
-	color: #618B4A;
+	color: #9edd7d;
 }
 
 .medium {
-	color: #ad9900;
+	color: #ddd27b;
 }
 
 .hard {
-	color: #F57200;
+	color: #e0a26b;
 }
 
 .expert {
-	color: #D64933;
+	color: #e27c6c;
 }
 
 .god {
 	color : #000000;
-}
-
-.staffing {
-	color: #d43a22;
-}
-
-.stringing {
-	color: #5cbe3e;
-}
-
-.whipping {
-	color: #a048f1;
 }
 
 .list-info {
