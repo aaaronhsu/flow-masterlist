@@ -50,6 +50,10 @@
 	margin-bottom: 3px;
 }
 
+ul {
+	margin-left: 3%;
+}
+
 @media (min-width: 700px) {
 	.list-header {
 		font-size: 22px;
@@ -91,6 +95,10 @@
 	
 	.masterlist-image:hover {
 		width: 51%;
+	}
+
+	ul {
+		margin-left: 2%;
 	}
 }
 

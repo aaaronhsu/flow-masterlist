@@ -130,13 +130,13 @@ function handleTSVResult(tsvString) {
 		// Videos
 		htmlStr += '<div class="col-sm"><center><h3 class="list-head">Videos</h3><li class="list-unstyled list-text">';
 		if (video1T != '') {
-			htmlStr += '<ul>• <a href="' + video1 + '" target="_blank">' + video1T + '</a></ul>';
+			htmlStr += '<ul>• <a class="' + prop + '" href="' + video1 + '" target="_blank">' + video1T + '</a></ul>';
 
 			if (video2T != '') {
-				htmlStr += '<ul>• <a href="' + video2 + '" target="_blank">' + video2T + '</a></ul>';
+				htmlStr += '<ul>• <a class="' + prop + '" href="' + video2 + '" target="_blank">' + video2T + '</a></ul>';
 
 				if (video3T != '') {
-					htmlStr += '<ul>• <a href="' + video3 + '" target="_blank">' + video3T + '</a></ul>';
+					htmlStr += '<ul>• <a class="' + prop + '" href="' + video3 + '" target="_blank">' + video3T + '</a></ul>';
 				}
 			}
 		}

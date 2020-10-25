@@ -54,12 +54,12 @@
 }
 
 .list-group-item:hover {
-	background-color: #3a3a3a;
+	background-color: #101b2c;
 	border: 1px solid #dfdbf7 !important;
 }
 
 .list-group-item:hover > h3 {
-	background-color: #3a3a3a;
+	background-color: #101b2c;
 }
 
 .item {
@@ -91,18 +91,6 @@ ul {
 
 li {
 	margin-bottom: 3px;
-}
-
-.staffing {
-	color: #B5C7D3;
-}
-
-.stringing {
-	color: #A58D7F;
-}
-
-.whipping {
-	color: #e7b87b;
 }
 
 .centerA {
