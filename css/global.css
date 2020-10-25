@@ -79,6 +79,10 @@
 	transition: 0.3s;
 }
 
+.prop-heading:hover > a {
+	color: white;
+}
+
 .jumbotron {
 	margin-top: 15%;
 }
