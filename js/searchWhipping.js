@@ -24,9 +24,6 @@ function handleTSVResult(tsvString) {
     // split row to cells
     var cells = row.split('	');
     
-    // Extract data from cell 1 and 2 of current row
-	
-	
     var move = cells[0];
 
     var holderString = '';
