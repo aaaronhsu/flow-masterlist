@@ -42,7 +42,7 @@ function handleTSVResult(tsvString) {
     unorganizedData.push([move, holderString]);
   }
 
-  unorganizedData.push([move, holderString]);
+  unorganizedData.sort((a, b) => a[1].localeCompare(b[1]));
 
   for (var i = 0; i < unorganizedData.length; i++) {
     htmlStr += unorganizedData[i][1];
