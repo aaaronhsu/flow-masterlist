@@ -14,6 +14,7 @@ function handleTSVResult(tsvString) {
   var htmlStr = '';
 
   var prop = "stringing";
+
   var unorganizedData = [];
   
   // Iterate over each row
@@ -27,9 +28,9 @@ function handleTSVResult(tsvString) {
 	
 	
     var move = cells[0];
-
-    var holderString = '';
     
+    var holderString = '';
+
     holderString += '<li class="list-group-item" onclick="window.location=\'';
     holderString += 'moves/moves.html?';
     holderString += 'move=' + move;
@@ -46,6 +47,10 @@ function handleTSVResult(tsvString) {
   for (var i = 0; i < unorganizedData.length; i++) {
     htmlStr += unorganizedData[i][1];
   }
+  
+  // Set the string generated from CSV as HTML of the dedicated div
+  dataArea.innerHTML = htmlStr;
+}
 
 // Init Ajax Object
 var ajax = new XMLHttpRequest();
