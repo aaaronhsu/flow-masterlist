@@ -14,6 +14,8 @@ function handleTSVResult(tsvString) {
   var htmlStr = '';
 
   var prop = "stringing";
+
+  var unorganizedData = [];
   
   // Iterate over each row
   for (var i = 0; i < rows.length; i++) {
@@ -22,7 +24,9 @@ function handleTSVResult(tsvString) {
     // split row to cells
     var cells = row.split('	');
     
-    // Extract data from cell 1 and 2 of current row
+    // create holder string
+
+    var holderString = '';
 	
 	
     var move = cells[0];
@@ -30,14 +34,22 @@ function handleTSVResult(tsvString) {
     if (move == "staffing") prop = "staffing";
     else if (move == "whipping") prop = "whipping";
     else {
-      htmlStr += '<li class="list-group-item" onclick="window.location=\'';
-      htmlStr += 'moves/moves.html?';
-      htmlStr += 'move=' + move;
-      htmlStr += '&prop=' + prop;
-      htmlStr += '\';"><h3 class="item ' + prop + '"';
-      htmlStr += 'href="#">';
-      htmlStr += move + '</h3></li>';
+      holderString += '<li class="list-group-item" onclick="window.location=\'';
+      holderString += 'moves/moves.html?';
+      holderString += 'move=' + move;
+      holderString += '&prop=' + prop;
+      holderString += '\';"><h3 class="item ' + prop + '"';
+      holderString += 'href="#">';
+      holderString += move + '</h3></li>';
     }
+
+    unorganizedData.push([move, holderString]);
+  }
+  
+  unorganizedData.sort((a, b) => a[1].localeCompare(b[1]));
+
+  for (var i = 0; i < unorganizedData.length; i++) {
+    htmlStr += unorganizedData[i][1];
   }
   
   // Set the string generated from CSV as HTML of the dedicated div
