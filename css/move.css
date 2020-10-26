@@ -108,6 +108,10 @@ h3 {
 	height: 49.1vw;
 }
 
+.col-sm-7 {
+	padding-right: 0;
+}
+
 @media (min-width: 575px) {
 	.video {
 		width: 100%;
