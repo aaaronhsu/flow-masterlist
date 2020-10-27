@@ -140,3 +140,8 @@ span:hover a {
 .expert {
 	background-color: #c77568;
 }
+
+.subcategory {
+    color: rgb(235, 235, 235);
+    margin-left: 2%;
+}
