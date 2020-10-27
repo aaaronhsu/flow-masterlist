@@ -145,3 +145,8 @@ span:hover a {
     color: rgb(235, 235, 235);
     margin-left: 2%;
 }
+
+hr {
+    border-color: white;
+    max-width: 95%;
+}
