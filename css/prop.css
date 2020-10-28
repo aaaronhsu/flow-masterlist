@@ -50,6 +50,10 @@
 	color: white;
 }
 
+.channel:hover > a {
+	color: white;
+}
+
 .channel-header {
 	text-align: center;
 }
