@@ -88,17 +88,17 @@
 }
 
 .staffing {
-	color: #68cfcf;
+	color: rgb(90, 233, 233);
 	transition: 0.3s;
 }
 
 .stringing {
-	color: #699add;
+	color: #5b95e6;
 	transition: 0.3s;
 }
 
 .whipping {
-	color: #aea4eb;
+	color: #9587ec;
 	transition: 0.3s;
 }
 

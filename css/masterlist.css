@@ -126,17 +126,31 @@ span:hover a {
 }
 
 .easy {
-	background-color: #70bd47;
+	background-color: #9edd7d;
 }
 
 .medium {
-	background-color: #ccc063;
+	background-color: #d4c765;
 }
 
 .hard {
-	background-color: #d1945f;
+	background-color: #e0a26b;
 }
 
 .expert {
-	background-color: #c77568;
+	background-color: #e27c6c;
+}
+
+.god {
+	background-color : #838383;
+}
+
+.subcategory {
+    color: rgb(235, 235, 235);
+    margin-left: 2%;
+}
+
+hr {
+    border-color: white;
+    max-width: 95%;
 }

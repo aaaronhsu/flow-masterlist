@@ -11,9 +11,17 @@
 	margin: 0 auto;
 }
 
+.caption {
+	color: #E8E6F4;
+	font-size: 24px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
 .masterlist-image {
 	margin: 0 auto;
-	border-radius: 10px;
+	margin-bottom: 0;
+	border-radius: 5px;
 	width: 80%;
 
 	transition:0.5s;
@@ -47,11 +55,19 @@
 }
 
 .list-info {
-	margin-bottom: 3px;
+	margin-bottom: 5px;
+	max-width: 90%;
+	font-weight: 350;
+	font-size: 18px;
 }
 
 ul {
 	margin-left: 3%;
+}
+
+hr {
+	border-color: white;
+	max-width: 95%;
 }
 
 @media (min-width: 700px) {
@@ -72,7 +88,8 @@ ul {
 	}
 	
 	.masterlist-image:hover {
-		width: 61%;
+		width: 30%;
+		filter: brightness(50%);
 	}
 }
 
@@ -116,10 +133,11 @@ ul {
 		border-radius: 17px;
 		width: 30%;
 	
-		transition:0.5s;
+		transition:0.2s;
 	}
 	
 	.masterlist-image:hover {
-		width: 31%;
+		width: 30%;
+		filter: brightness(50%);
 	}
 }

@@ -23,19 +23,21 @@ function handleTSVResult(tsvString) {
     // Extract data from cell 1 and 2 of current row
 	
 	
-	var level = cells[0];
+  var level = cells[0];
+  
+  htmlStr += '<hr>'
 	
-	htmlStr += '<h3 class="list-header ml-5">General Tips for ' + level + ' stringers</h3>';
+	htmlStr += '<h3 class="list-header ml-5 stringing">General Tips for ' + level + ' stringers</h3>';
 
-	for (var a = 1; a < cells.length; a++) {
-		if (cells[a] == '') break;
+	  for (var a = 1; a < cells.length; a++) {
+	  	if (cells[a] == '') break;
 
-		htmlStr += '<ul class="list-info">' + cells[a] + '</ul>';
-	}
-
-	htmlStr += '<h1>\n</h1>';
+	  	htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
+	  }
     
   }
+  
+  htmlStr += '<hr>';
   
   // Set the string generated from CSV as HTML of the dedicated div
   dataArea.innerHTML = htmlStr;

@@ -107,16 +107,16 @@ function handleTSVResult(tsvString) {
 		// Tips
 		htmlStr += '<div class="col-sm"><center><h3 class="list-head">Tips</h3><li class="list-unstyled list-text">';
 		if (tip1 != '') {
-			htmlStr += '<ul>• ' + tip1 + '</ul>';
+			htmlStr += '<ul>- ' + tip1 + '</ul>';
 
 			if (tip2 != '') {
-				htmlStr += '<ul>• ' + tip2 + '</ul>';
+				htmlStr += '<ul>- ' + tip2 + '</ul>';
 
 				if (tip3 != '') {
-					htmlStr += '<ul>• ' + tip3 + '</ul>';
+					htmlStr += '<ul>- ' + tip3 + '</ul>';
 
 					if (tip4 != '') {
-						htmlStr += '<ul>• ' + tip4 + '</ul>';
+						htmlStr += '<ul>- ' + tip4 + '</ul>';
 					}
 				}
 			}
@@ -130,13 +130,13 @@ function handleTSVResult(tsvString) {
 		// Videos
 		htmlStr += '<div class="col-sm"><center><h3 class="list-head">Videos</h3><li class="list-unstyled list-text">';
 		if (video1T != '') {
-			htmlStr += '<ul>• <a class="' + prop + '" href="' + video1 + '" target="_blank">' + video1T + '</a></ul>';
+			htmlStr += '<ul>- <a class="' + prop + '" href="' + video1 + '" target="_blank">' + video1T + '</a></ul>';
 
 			if (video2T != '') {
-				htmlStr += '<ul>• <a class="' + prop + '" href="' + video2 + '" target="_blank">' + video2T + '</a></ul>';
+				htmlStr += '<ul>- <a class="' + prop + '" href="' + video2 + '" target="_blank">' + video2T + '</a></ul>';
 
 				if (video3T != '') {
-					htmlStr += '<ul>• <a class="' + prop + '" href="' + video3 + '" target="_blank">' + video3T + '</a></ul>';
+					htmlStr += '<ul>- <a class="' + prop + '" href="' + video3 + '" target="_blank">' + video3T + '</a></ul>';
 				}
 			}
 		}
