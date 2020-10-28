@@ -30,6 +30,7 @@
 .list-header {
 	font-size: 20px;
 	color: white;
+	text-align: center;
 }
 
 .list-info {
@@ -103,6 +104,11 @@ ul {
 	ul {
 		margin-left: 3%;
 		text-align: left;
+	}
+
+	.list-header {
+		text-align: left;
+		margin-left: 2%;
 	}
 }
 
