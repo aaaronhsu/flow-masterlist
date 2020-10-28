@@ -35,7 +35,7 @@ function handleTSVResult(tsvString) {
     else if (move == "whipping") prop = "whipping";
     else {
       holderString += '<li class="list-group-item" onclick="window.location=\'';
-      holderString += 'moves/moves.html?';
+      holderString += '../moves/moves.html?';
       holderString += 'move=' + move;
       holderString += '&prop=' + prop;
       holderString += '\';"><h3 class="item ' + prop + '"';
@@ -59,7 +59,7 @@ function handleTSVResult(tsvString) {
 // Init Ajax Object
 var ajax = new XMLHttpRequest();
 
-tsvUrl = "moves/moves.tsv";
+tsvUrl = "../moves/moves.tsv";
 // Set a GET request to the URL which points to your CSV file
 ajax.open('GET', tsvUrl);
 
