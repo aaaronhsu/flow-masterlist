@@ -47,11 +47,19 @@
 }
 
 .list-info {
-	margin-bottom: 3px;
+	margin-bottom: 5px;
+	max-width: 90%;
+	font-weight: 350;
+	font-size: 18px;
 }
 
 ul {
 	margin-left: 3%;
+}
+
+hr {
+	border-color: white;
+	max-width: 95%;
 }
 
 @media (min-width: 700px) {
