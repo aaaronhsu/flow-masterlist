@@ -32,7 +32,8 @@ function handleTSVResult(tsvString) {
 	  for (var a = 1; a < cells.length; a++) {
 	  	if (cells[a] == '') break;
 
-	  	htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
+      htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
+      htmlStr += '<br>'
 	  }
     
   }
