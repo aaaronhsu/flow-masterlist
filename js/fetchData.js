@@ -94,12 +94,14 @@ function handleTSVResult(tsvString) {
 
 		// Description
 		htmlStr +='<div class="container-fluid text-center">';
-		htmlStr += '<iframe class="img-fluid mx-auto d-block mb-3 video" src="';
-
-		if (demonstration.charAt(0) != "h") htmlStr += 'https://www.youtube.com/embed/ZWcRmoLqhkc';
-		else htmlStr += demonstration;
-
-		htmlStr += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+		if (demonstration.charAt(0) == "h") {
+			htmlStr += '<iframe class="img-fluid mx-auto d-block mb-3 video" src="';
+			htmlStr += demonstration;
+			htmlStr += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+		}
+		else {
+			
+		}
 		htmlStr += '<h3 class="description text-center">';
 		htmlStr += description;
 		htmlStr += '</h3></div></div><div class="col-sm-4"><div class="row">';
