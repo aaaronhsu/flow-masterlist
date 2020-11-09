@@ -100,7 +100,7 @@ function handleTSVResult(tsvString) {
 			htmlStr += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 		}
 		else {
-			htmlStr += '<img src="../images/noVideo.jpg">';
+			htmlStr += '<img class="img-fluid mx-auto d-block mb-3 video" src="../images/noVideo.jpg">';
 		}
 		htmlStr += '<h3 class="description text-center">';
 		htmlStr += description;
