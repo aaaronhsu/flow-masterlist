@@ -23,19 +23,20 @@ function handleTSVResult(tsvString) {
     // Extract data from cell 1 and 2 of current row
 	
 	
-    var level = cells[0];
-    if (level == '') break;
+	var level = cells[0];
+	  
+	if (level == '') break;
   
-    htmlStr += '<hr>'
+  	htmlStr += '<hr>'
 	
-	  htmlStr += '<h3 class="list-header stringing">General Tips for ' + level + ' Stringers</h3>';
+	htmlStr += '<h3 class="list-header stringing">General Tips for ' + level + ' Whippers</h3>';
 
-	  for (var a = 1; a < cells.length; a++) {
-      if (cells[a] == '') break;
+	for (var a = 1; a < cells.length; a++) {
+	  	if (cells[a] == '') break;
 
-      htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
-      htmlStr += '<br>'
-	  }
+    	htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
+    	htmlStr += '<br>'
+	}
     
   }
   
@@ -48,7 +49,7 @@ function handleTSVResult(tsvString) {
 // Init Ajax Object
 var ajax = new XMLHttpRequest();
 
-tsvUrl = "../stringing/stringingTips.tsv";
+tsvUrl = "../whipping/whippingTips.tsv";
 // Set a GET request to the URL which points to your CSV file
 ajax.open('GET', tsvUrl);
 
