@@ -163,7 +163,7 @@ function handleTSVResult(tsvString) {
 				htmlStr += move2;
 				htmlStr += '</a></center></div>';
 
-				if (move3 != '\r') {
+				if (move3 != '') {
 					htmlStr += '<div class="col-sm" onclick="window.location=\'';
 					htmlStr += '?move=' + move3 + '&prop=' + prop + '\';">';
 					htmlStr += '<center class="other-moves rounded py-3"><a class="' + prop + '">';
