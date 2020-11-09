@@ -14,7 +14,7 @@ function handleTSVResult(tsvString) {
   var htmlStr = '';
   
   // Iterate over each row
-  for (var i = 0; i < rows.length; i++) {
+  for (var i = 0; i < rows.length - 1; i++) {
     var row = rows[i];
     
     // split row to cells
@@ -23,22 +23,27 @@ function handleTSVResult(tsvString) {
     // Extract data from cell 1 and 2 of current row
 	
 	
-  var level = cells[0];
+  	var name = cells[0];
+  	var prop = cells[1];
   
-  htmlStr += '<hr>'
-	
-	htmlStr += '<h3 class="list-header stringing">General Tips for ' + level + ' Stringers</h3>';
-
-	  for (var a = 1; a < cells.length; a++) {
-	  	if (cells[a] == '') break;
-
-      htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
-      htmlStr += '<br>'
-	  }
+	for (var a = 0; a < cells.length - 1; a++) {
+		htmlStr += '<span class=' + prop + '>' + name + '</span>, ';
+	}
     
   }
-  
-  htmlStr += '<hr>';
+
+  	var row = rows[i];
+    
+	// split row to cells
+	var cells = row.split('	');
+
+	// Extract data from cell 1 and 2 of current row
+
+
+	var name = cells[0];
+	var prop = cells[1];
+
+	htmlStr += 'and <span class=' + prop + '>' + name + '</span>.';
   
   // Set the string generated from CSV as HTML of the dedicated div
   dataArea.innerHTML = htmlStr;
