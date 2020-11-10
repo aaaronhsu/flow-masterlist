@@ -180,7 +180,12 @@ function handleTSVResult(tsvString) {
   }
 
   if (!found) {
-	  htmlStr += '<h1>Error 404</h1>';
+	htmlStr += '<h1 class="sticky-top heading-text text-center mt-3">'
+	htmlStr += 'No Move Here :('
+	htmlStr += '</h1><div class="container-fluid">';
+	htmlStr += '<h3 class="description text-center">'
+	htmlStr += 'If you think this is a mistake, please let Aaron know. Unfortunately, it probably is a mistake.';
+	htmlStr += '</h3>';
   }
   
   // Set the string generated from CSV as HTML of the dedicated div
