@@ -43,7 +43,7 @@ function handleTSVResult(tsvString) {
 // Init Ajax Object
 var ajax = new XMLHttpRequest();
 
-tsvUrl = "../contributors.tsv";
+tsvUrl = "contributors.tsv";
 // Set a GET request to the URL which points to your CSV file
 ajax.open('GET', tsvUrl);
 
