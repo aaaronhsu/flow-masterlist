@@ -25,17 +25,21 @@ function handleTSVResult(tsvString) {
 	
   	var level = cells[0];
 
-  	if (level == '') break;
+  	if (level == '') {
+      htmlStr += '<hr>';
+      htmlStr += '<h3 class="list-header my-5">There are no tips for <span class="staffing">Staffers</span> yet :(</h3>';
+      break;
+    }
   
   	htmlStr += '<hr>'
 	
-	htmlStr += '<h3 class="list-header staffing">General Tips for ' + level + ' Staffers</h3>';
+	  htmlStr += '<h3 class="list-header staffing">General Tips for ' + level + ' Staffers</h3>';
 
-	for (var a = 1; a < cells.length; a++) {
-	  	if (cells[a] == '') break;
+	  for (var a = 1; a < cells.length; a++) {
+	    	if (cells[a] == '') break;
 
-      	htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
-      	htmlStr += '<br>'
+        	htmlStr += '<ul class="list-info">– ' + cells[a] + '</ul>';
+        	htmlStr += '<br>'
 	}
     
   }

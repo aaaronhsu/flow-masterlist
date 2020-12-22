@@ -24,7 +24,12 @@ function handleTSVResult(tsvString) {
 	
 	
     var level = cells[0];
-    if (level == '') break;
+
+    if (level == '') {
+      htmlStr += '<hr>';
+      htmlStr += '<h3 class="list-header my-5">There are no tips for <span class="stringing">Stringers</span> yet :(</h3>';
+      break;
+    }
   
     htmlStr += '<hr>'
 	
