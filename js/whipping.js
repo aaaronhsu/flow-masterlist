@@ -25,11 +25,15 @@ function handleTSVResult(tsvString) {
 	
 	var level = cells[0];
 	  
-	if (level == '') break;
+	if (level == '') {
+    htmlStr += '<hr>';
+    htmlStr += '<h3 class="list-header my-5">There are no tips for <span class="whipping">Whippers</span> yet :(</h3>';
+    break;
+  }
   
   	htmlStr += '<hr>'
 	
-	htmlStr += '<h3 class="list-header stringing">General Tips for ' + level + ' Whippers</h3>';
+	htmlStr += '<h3 class="list-header whipping">General Tips for ' + level + ' Whippers</h3>';
 
 	for (var a = 1; a < cells.length; a++) {
 	  	if (cells[a] == '') break;
