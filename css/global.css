@@ -108,6 +108,10 @@ a:hover {
 	transition: 0.3s;
 }
 
+.white {
+	color: whitesmoke;
+}
+
 @media (min-width: 700px) {
 	.jumbotron {
 		margin-top: 10%;
