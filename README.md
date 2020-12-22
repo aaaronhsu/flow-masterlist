@@ -17,10 +17,10 @@ Each move can also be accessed through the **Search** tab.
 
 ## Contributions
 The information on this website has been contributed by:
-* Aaron Hsu _Stringing_
-* [Jason Lin](https://github.com/JasonLin43212) _Stringing_
-* Johanna Lin _Staffing_
-* Kevin Shaw _Staffing_
-* Khandaker Ridwan _Whipping_
+* Aaron Hsu | _Stringing_
+* [Jason Lin](https://github.com/JasonLin43212) | _Stringing_
+* Johanna Lin | _Staffing_
+* Kevin Shaw | _Staffing_
+* Khandaker Ridwan | _Whipping_
 
 If you would like to contribute, please contact me. **You don't need _any_ programming experience to contribute!**
