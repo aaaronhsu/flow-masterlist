@@ -1,4 +1,4 @@
-# Masterlist of Flow Moves
+# _The_ Masterlist of Flow Moves
 An online resource for Flowers of all skill levels to enhance their Flow!
 
 ## Motivation
