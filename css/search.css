@@ -38,7 +38,7 @@
 }
 
 .list-group-item {
-	background-color: #1B2A41;
+	background-color: #1B1A19;
 	max-width: 60%;
 	transition: 0.5s;
 	border: 1px solid #3b485c !important;
@@ -48,18 +48,18 @@
 
 
 .list-group-item > h3 {
-	background-color: #1B2A41;
+	background-color: #1B1A19;
 	
 	transition: 0.5s;
 }
 
 .list-group-item:hover {
-	background-color: #101b2c;
+	background-color: #323130;
 	border: 1px solid #dfdbf7 !important;
 }
 
 .list-group-item:hover > h3 {
-	background-color: #101b2c;
+	background-color: #323130;
 }
 
 .item {
@@ -82,7 +82,7 @@ h3 {
 	font-weight: 450;
 	font-family: Inter;
 	font-size: 20px;
-	background-color: #1B2A41;
+	background-color: #1B1A19;
 }
 
 ul {
