@@ -13,7 +13,7 @@ Each move contains
 * Links to YouTube tutorials
 * A list of related moves, if applicable
 
-Each move can also be accessed through the **Search** tab.
+Each move can also be accessed through the **Search** tab. There are **over 100** of them!
 
 ## Contributions
 The information on this website has been contributed by:
