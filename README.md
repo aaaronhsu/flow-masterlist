@@ -7,7 +7,7 @@ With COVID-19, the teaching of Flow at Stuyvesant's [StuyFlow](https://www.faceb
 ## Website Structure
 The website is divided between 3 of the main props taught at StuyFlow: **Staffing**, **Stringing**, and **Whipping**. Each section contains tips for each skill level as well as a chart that contains a recommended sequence of moves to learn for their respective prop. From the chart, users can click on specific moves to get more information.
 Each move contains
-* A designated difficulty level
+* A designated difficulty level and skillset
 * An embedded video demonstration
 * Various tips
 * Links to YouTube tutorials
