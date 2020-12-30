@@ -49,6 +49,7 @@
 .channel:hover {
 	background-color: #323130;
 	color: white;
+	cursor: pointer;
 }
 
 .channel:hover > a {

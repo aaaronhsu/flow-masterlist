@@ -152,21 +152,21 @@ function handleTSVResult(tsvString) {
 			htmlStr += '<div class="container-fluid"><h3 class="heading-text text-center">Related Moves</h3><div class="container-fluid pb-3"><div class="row">';
 			htmlStr += '<div class="col-sm" onclick="window.location=\'';
 			htmlStr += '?move=' + move1 + '&prop=' + prop + '\';">';
-			htmlStr += '<center class="other-moves rounded py-3"><a class="' + prop + '">';
+			htmlStr += '<center class="other-moves rounded py-3 pointer"><a class="' + prop + '">';
 			htmlStr += move1;
 			htmlStr += '</a></center></div>';
 
 			if (move2 != '') {
 				htmlStr += '<div class="col-sm" onclick="window.location=\'';
 				htmlStr += '?move=' + move2 + '&prop=' + prop + '\';">';
-				htmlStr += '<center class="other-moves rounded py-3"><a class="' + prop + '">';
+				htmlStr += '<center class="other-moves rounded py-3 pointer"><a class="' + prop + '">';
 				htmlStr += move2;
 				htmlStr += '</a></center></div>';
 
 				if (move3 != '') {
 					htmlStr += '<div class="col-sm" onclick="window.location=\'';
 					htmlStr += '?move=' + move3 + '&prop=' + prop + '\';">';
-					htmlStr += '<center class="other-moves rounded py-3"><a class="' + prop + '">';
+					htmlStr += '<center class="other-moves rounded py-3 pointer"><a class="' + prop + '">';
 					htmlStr += move3;
 					htmlStr += '</a></center></div>';
 				}

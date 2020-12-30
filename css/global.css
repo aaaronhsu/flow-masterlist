@@ -55,6 +55,7 @@
 .prop-heading:hover {
 	background-color: #323130;
 	color: white;
+	cursor: pointer;
 }
 
 .navbar-brand {
@@ -110,6 +111,10 @@ a:hover {
 
 .white {
 	color: whitesmoke;
+}
+
+.pointer:hover {
+	cursor: pointer;
 }
 
 @media (min-width: 700px) {

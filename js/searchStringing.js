@@ -28,7 +28,7 @@ function handleTSVResult(tsvString) {
     
     var holderString = '';
 
-    holderString += '<li class="list-group-item" onclick="window.location=\'';
+    holderString += '<li class="list-group-item pointer" onclick="window.location=\'';
     holderString += '../moves/moves.html?';
     holderString += 'move=' + move;
     holderString += '&prop=' + prop;

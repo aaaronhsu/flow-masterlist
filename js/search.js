@@ -34,7 +34,7 @@ function handleTSVResult(tsvString) {
     if (move == "staffing") prop = "staffing";
     else if (move == "whipping") prop = "whipping";
     else {
-      holderString += '<li class="list-group-item" onclick="window.location=\'';
+      holderString += '<li class="list-group-item pointer" onclick="window.location=\'';
       holderString += '../moves/moves.html?';
       holderString += 'move=' + move;
       holderString += '&prop=' + prop;
