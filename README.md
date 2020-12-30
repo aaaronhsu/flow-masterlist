@@ -21,6 +21,7 @@ The information on this website has been contributed by:
 * [Jason Lin](https://github.com/JasonLin43212) | _Stringing_
 * Johanna Lin | _Staffing_
 * Kevin Shaw | _Staffing_
+* Steve Wang | _Staffing_
 * Khandaker Ridwan | _Whipping_
 
 If you would like to contribute, please contact me. **You don't need _any_ programming experience to contribute!**
