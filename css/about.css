@@ -26,6 +26,10 @@ h3 {
 	line-height: 1.5;
 }
 
+h4 {
+	line-height: 1.5;
+}
+
 @media (min-width: 700px) {
 	.description {
 		max-width: 75%;
@@ -33,7 +37,7 @@ h3 {
 
 	h3 {
 		font-size: 18px;
-		text-align: center;
+		text-align: left;
 	}
 
 	h4 {
@@ -48,7 +52,7 @@ h3 {
 
 	h3 {
 		font-size: 20px;
-		text-align: center;
+		text-align: left;
 	}
 
 	h4 {
@@ -63,7 +67,7 @@ h3 {
 
 	h3 {
 		font-size: 22px;
-		text-align: center;
+		text-align: left;
 	}
 
 	h4 {
