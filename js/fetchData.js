@@ -86,7 +86,7 @@ function handleTSVResult(tsvString) {
 		else if (difficulty == "3" || difficulty == "4") htmlStr += "medium";
 		else if (difficulty == "5" || difficulty == "6") htmlStr += "hard";
 		else if (difficulty == "7" || difficulty == "8") htmlStr += "expert";
-		else htmlStrl += "god"
+		else if (difficulty == "9" || difficulty == "10") htmlStr += "god";
 		
 		htmlStr += '">';
 		htmlStr += capitalize(difficulty);
