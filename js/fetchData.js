@@ -71,6 +71,7 @@ function handleTSVResult(tsvString) {
 		var move3 = cells[15];
 
 		var demonstration = cells[16];
+		var skillSet = cells[17];
 		
 		// Move Header
 		htmlStr += '<h1 class="sticky-top heading-text text-center mt-3">'
@@ -80,7 +81,15 @@ function handleTSVResult(tsvString) {
 		htmlStr += prop;
 		htmlStr += '">';
 		htmlStr += capitalize(prop);
-		htmlStr += '</span> | Difficulty: <span class="';
+		htmlStr += "</span>";
+
+		htmlStr += ' | Skillset: <span class = "';
+		htmlStr += prop;
+		htmlStr += '">';
+		htmlStr += capitalize(skillSet);
+		htmlStr += "</span>";
+
+		htmlStr += ' | Difficulty: <span class="';
 		
 		if (difficulty == "1" || difficulty == "2") htmlStr += "easy";
 		else if (difficulty == "3" || difficulty == "4") htmlStr += "medium";
@@ -90,7 +99,9 @@ function handleTSVResult(tsvString) {
 		
 		htmlStr += '">';
 		htmlStr += capitalize(difficulty);
-		htmlStr += '</span></h3></div><div class="row my-5"><div class="col-sm-7">';
+		htmlStr += '</span>';
+
+		htmlStr += '</h3></div><div class="row my-5"><div class="col-sm-7">';
 
 		// Description
 		htmlStr +='<div class="container-fluid text-center">';
