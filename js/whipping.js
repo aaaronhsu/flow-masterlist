@@ -33,7 +33,7 @@ function handleTSVResult(tsvString) {
   
   	htmlStr += '<hr>'
 	
-	  htmlStr += '<h3 class="list-header whipping">General Tips for ' + level + ' Whippers</h3>';
+	  htmlStr += '<h3 class="list-header">General Tips for ' + level + ' Whippers</h3>';
 
 	  for (var a = 1; a < cells.length; a++) {
 	    	if (cells[a] == '') break;
