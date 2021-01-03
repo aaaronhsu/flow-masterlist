@@ -24,6 +24,6 @@ The information on this website has been contributed by:
 * Johanna Lin | _Staffing_
 * Kevin Shaw | _Staffing_
 * Khandaker Ridwan | _Whipping_
-* Steve Wang | _Staffing_
+* [Steve Wang](https://github.com/swang01) | _Staffing_
 
 If you would like to contribute, please contact me. **You don't need _any_ programming experience to contribute!**
