@@ -79,7 +79,9 @@ function handleTSVResult(tsvString) {
 		htmlStr += '</h1><div class="container-fluid">';
 		htmlStr += '<h3 class="description text-center">Type: <span class="';
 		htmlStr += prop;
-		htmlStr += ' pointer" onclick="window.location=\'../stringing/main.html\';">';
+		htmlStr += ' pointer" onclick="window.location=\'../';
+		htmlStr += lowercase(prop);
+		htmlStr += '/main.html\';">';
 		htmlStr += capitalize(prop);
 		htmlStr += "</span>";
 
