@@ -6,7 +6,7 @@
 
 .description {
 	color: #E8E6F4;
-	font-size: 20px;
+	font-size: 16px;
 	max-width: 80%;
 	margin: 0 auto;
 }
@@ -28,13 +28,13 @@
 }
 
 .list-header {
-	font-size: 20px;
+	font-size: 19px;
 	color: white;
 	text-align: center;
 }
 
 .list-info {
-	font-size: 18px;
+	font-size: 14px;
 	color: #E8E6F4;
 }
 
@@ -61,15 +61,14 @@
 }
 
 .recommendedChannel {
-	font-size: 20px;
-	color: #E8E6F4;
+	font-size: 16px;
 }
 
 .list-info {
 	margin-bottom: 5px;
 	max-width: 90%;
 	font-weight: 350;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 hr {
@@ -82,12 +81,18 @@ ul {
 }
 
 @media (min-width: 700px) {
+	.description {
+		font-size: 18px;
+	}
+
 	.list-header {
-		font-size: 22px;
+		font-size: 19px;
+		text-align: left;
+		margin-left: 2%;
 	}
 
 	.list-info {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.masterlist-image {
@@ -108,19 +113,22 @@ ul {
 		text-align: left;
 	}
 
-	.list-header {
-		text-align: left;
-		margin-left: 2%;
+	.recommendedChannel {
+		font-size: 16px;
 	}
 }
 
 @media (min-width: 900px) {
+	.description {
+		font-size: 20px;
+	}
+
 	.list-header {
-		font-size: 23px;
+		font-size: 20px;
 	}
 
 	.list-info {
-		font-size: 21px;
+		font-size: 18px;
 	}
 
 	.masterlist-image {
@@ -138,15 +146,19 @@ ul {
 	ul {
 		margin-left: 2%;
 	}
+
+	.recommendedChannel {
+		font-size: 17px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.list-header {
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.list-info {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.masterlist-image {
@@ -160,5 +172,9 @@ ul {
 	.masterlist-image:hover {
 		width: 30%;
 		filter: brightness(50%);
+	}
+
+	.recommendedChannel {
+		font-size: 19px;
 	}
 }
